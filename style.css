@@ -1,0 +1,310 @@
+::after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-weight: inherit;
+ font-size: inherit;
+}
+
+html,
+body {
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  width: 100%;
+}
+.header__menu-left,
+.header__menu-right {
+  display: flex;
+  align-items: center;
+}
+.header__mid {
+  display: none;
+}
+.header__burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menuback__divider-right {
+  height: 32px;
+  width: 2px;
+  border-radius: 1px;
+  background: #EAEAEA;
+}
+
+.header__logo {
+  background-color: white;
+  border: 0;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  background: #FF3E79;
+  border-radius: 50%;
+  border: 0;
+  margin: 0 16px 0 16px;
+}
+.header__button + .header__button {
+  margin-left: 0;
+}
+
+@media (min-width: 767px) {
+
+  .menuback__divider-left {
+    height: 32px;
+    width: 2px;
+    border-radius: 1px;
+    background: #EAEAEA;
+  }
+  
+  .header__mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+ 
+  .header__logo {
+    background-color: white;
+    border: 0;
+    margin-left: 16px;
+  }
+}
+  @media (min-width: 1100px) {
+   .header {
+    display: none;
+   }
+}
+
+.main {
+  background: #F8F8F8;
+}
+
+
+@media (min-width: 767px) {
+  .main {
+    margin-right: 15px;
+  }
+}
+
+.main__background {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}   
+
+.main__button {
+  display: none;
+}
+
+.main__title {
+  font-weight: bold;
+  font-family: TT Lakes;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+}
+
+
+@media (min-width: 1100px) { 
+
+  .main__button {
+      display: flex;
+      align-items: center;
+     }
+
+     .main {
+      margin: 0px;
+    }
+
+  }
+
+.main__divider {
+  height: 40px;
+  width: 4px;
+  border-radius: 6px;
+  background: #41F6D7;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  margin-right: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.main__title-copy {
+  display: flex;
+  align-items: center;
+}
+
+.main__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+
+.main__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.main__link:first-child {
+  margin-left: 16px;
+}
+.main__link:last-child {
+  margin-right: 20px;
+}
+
+.main__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 0 22px;
+  height: 40px;
+  white-space: nowrap;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+
+}
+
+.main__link:hover,
+.main__link:focus,
+.main__link:active {
+  background: white;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  outline: none;
+}
+
+.main__text {
+  margin: 0 16px;
+  left: 5%;
+  right: 5%;
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+}
+
+
+@media ( min-width: 767px) {
+  .main__text {
+   width: 50%;
+   margin-top: 10px;
+  }
+
+}
+
+
+.main__icon {
+  display: flex;
+  flex-direction: row;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  padding-bottom: 15px;
+  }
+  .main__arrow {
+    margin-right: 16px;
+  }
+
+  .main__img {
+   width: 100%;
+  }
+
+  .main__IMG {
+    width: 100%;
+    height: auto;
+
+  }
+  .main__text-hidden {
+    display: none;
+  }
+  
+  @media ( min-width: 767px) {
+    .main__container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .main__text-hidden {
+      display: block;
+    }
+
+    span {
+      display: none;
+    }
+
+    .main__img {
+      margin: 20px;
+      height: auto;
+      width: 50%;
+    }
+
+    .main__IMG {
+      border-radius: 4px;
+    }
+
+  }
+
+    @media ( min-width: 1100px) {
+      .main__text-hidden {
+        display: block;
+      }
+
+      span {
+        display: inline;
+      }
+
+      .main__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: auto;
+      }
+
+      .main__icon {
+        margin-top: 13px;
+      }
+
+}
+ 
